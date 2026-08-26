@@ -1,0 +1,25 @@
+[project]
+name = "llm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Aayush Khanna", email = "ayush25khanna@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "datasets>=5.0.1",
+    "ipykernel>=7.3.0",
+    "ipywidgets>=8.1.9",
+    "jupyter>=1.1.1",
+    "numpy>=2.5.2",
+    "torch>=2.13.0",
+    "tqdm>=4.70.0",
+]
+
+[project.scripts]
+llm = "llm:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
